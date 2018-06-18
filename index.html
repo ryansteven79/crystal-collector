@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Crystals Collector</title>
 
-    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/ryans-styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -22,28 +26,10 @@
             </div>
         </div>
     </div>
+
     <div class="container" style="margin-top: 30px;">
         <div class="row">
-            <div class="col-12 d-block d-sm-none">
-                <div class="bg-primary text-white text-center shadow p-3 mb-2 rounded">X-Small Size</div>
-            </div>
-            <div class="col-12 d-none d-sm-block d-md-none">
-                <div class="bg-secondary text-white text-center shadow p-3 mb-2 rounded">Small Size</div>
-            </div>
-            <div class="col-12 d-none d-md-block d-lg-none">
-                <div class="bg-success text-white text-center shadow p-3 mb-2 rounded">Medium Size</div>
-            </div>
-            <div class="col-12 d-none d-lg-block d-xl-none">
-                <div class="bg-danger text-white text-center shadow p-3 mb-2 rounded">Large Size</div>
-            </div>
-            <div class="col-12 d-none d-xl-block">
-                <div class="bg-info text-white text-center shadow p-3 mb-2 rounded">X-Large Size</div>
-            </div>
-        </div>
-    </div>
-    <div class="container" style="margin-top: 30px;">
-        <div class="row">
-            <div class="col-xl-6 well well-lg">
+            <div class="col-lg-6 col-xl-6 well well-lg">
                 <ul>
                     <li>
                         <p>You will be given a random number at the start of the game.</p>
@@ -65,55 +51,112 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                <div class="card">
-                    <div class="text-center card-header">
-                        Number to Match
+            <div class="col-lg-6 col-xl-6">
+                <div class="row">
+                    <div class="float-right col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="card">
+                            <div class="text-center card-header">
+                                Number to Match
+                            </div>
+                            <div class="card-body">
+                                <h1 id="random-number" class="text-danger text-center card-title">34</h1>
+                                <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h1 class="text-center card-title">34</h1>
-                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <div class="float-right col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="card">
+                            <div class="text-center card-header">
+                                My total score
+                            </div>
+                            <div class="card-body">
+                                <h1 id="myTotalScore" class="text-danger text-center card-title">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                <div class="card">
+                <div class="card" style="margin-top:20px;">
                     <div class="text-center card-header">
-                        My total score
+                        <h2 id="scoreboard">Scoreboard</h2>
                     </div>
-                    <div class="card-body">
-                        <h1 class="text-center card-title">23</h1>
-                        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <div class="row">
+                        <div class="card-body">
+                            <h1 class="text-center">Wins
+                                <span id="Wins" class="badge badge-success">0</span>
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="text-center">Losses
+                                <span id="Losses" class="badge badge-danger">0</span>
+                            </h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container" style="margin-top: 30px;">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 offset-xl-2">
-                <a href="#" class="thumbnail">
-                    <img class="img-thumbnail" src="assets/images/crystal-01.svg" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="thumbnail">
-                    <img class="img-thumbnail" src="assets/images/crystal-02.svg" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="thumbnail">
-                    <img class="img-thumbnail" src="assets/images/crystal-03.svg" alt="">
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="thumbnail">
-                    <img class="img-thumbnail" src="assets/images/crystal-04.svg" alt="">
-                </a>
             </div>
 
         </div>
-    </div>
+        <div class="row" style="margin-top:20px;">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 offset-xl-4">
+                <a href="#" class="thumbnail">
+                    <img id="crystal-01" class="img-thumbnail" src="assets/images/crystal-01.svg" alt="">
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                <a href="#" class="thumbnail">
+                    <img id="crystal-02" class="img-thumbnail" src="assets/images/crystal-02.svg" alt="">
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                <a href="#" value="" class="thumbnail">
+                    <img id="crystal-03" class="img-thumbnail" src="assets/images/crystal-03.svg" alt="">
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                <a href="#" value="" class="thumbnail">
+                    <img id="crystal-04" class="img-thumbnail" src="assets/images/crystal-04.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col">
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropup
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!">Action</a>
+                        <a class="dropdown-item" href="#!">Something else here</a>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+        <!-- <div class="row" style="margin-top: 30px;">
+            <div class="col-12 d-block d-sm-none">
+                <div class="bg-primary text-white text-center shadow p-3 mb-2 rounded">X-Small Size</div>
+            </div>
+            <div class="col-12 d-none d-sm-block d-md-none">
+                <div class="bg-secondary text-white text-center shadow p-3 mb-2 rounded">Small Size</div>
+            </div>
+            <div class="col-12 d-none d-md-block d-lg-none">
+                <div class="bg-success text-white text-center shadow p-3 mb-2 rounded">Medium Size</div>
+            </div>
+            <div class="col-12 d-none d-lg-block d-xl-none">
+                <div class="bg-danger text-white text-center shadow p-3 mb-2 rounded">Large Size</div>
+            </div>
+            <div class="col-12 d-none d-xl-block">
+                <div class="bg-info text-white text-center shadow p-3 mb-2 rounded">X-Large Size</div>
+            </div>
+        </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
